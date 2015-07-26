@@ -1,0 +1,8 @@
+{
+    "name": "mahoujas/smsowl",
+    "autoload": {
+        "psr-0" : {
+            "Mahoujas\\SmsOwl" : "src"
+        }
+    }
+}
