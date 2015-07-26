@@ -1,5 +1,10 @@
 {
     "name": "mahoujas/smsowl",
+    "type": "library",
+    "description": "This is PHP wrapper for SmsOwl REST API.",
+    "keywords": ["sms","transactional sms","smsowl","promotional sms","sms india","bulk sms"],
+    "homepage": "https://smsowl.in",
+    "license": "MIT",
     "autoload": {
         "psr-0" : {
             "Mahoujas\\SmsOwl" : "src"
