@@ -27,6 +27,7 @@
 	    	curl_setopt($ch, CURLOPT_HTTPHEADER,
 		        array("Content-type: application/json"));
 			curl_setopt($ch, CURLOPT_POST, true);
+			curl_setopt($ch, CURLOPT_SSLVERSION, 4);
 			return $ch;
 		}
 
@@ -62,7 +63,6 @@
     		$response  = curl_exec($curl);
     		$httpCode = curl_getinfo($curl, CURLINFO_HTTP_CODE);    		
     		curl_close($curl);
-    		$jsonRespone = json_decode($response);
     		$jsonRespone = json_decode($response);
     		if($httpCode == 200){
     			return $jsonRespone->smsId;
